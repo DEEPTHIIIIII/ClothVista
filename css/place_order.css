@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+:root {
+  --red: #D0A2F7;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  background-color:#F1EAFF;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+header .logo {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+header .logo i {
+  color: var(--red);
+}
+
+header .navbar a {
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: #fff;
+  background: var(--red);
+}
+
+header .icons i,
+header .icons a {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  border-radius: 50%;
+  background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover {
+  color: #fff;
+  background: var(--red);
+}
+
+header .icons #designs-bars {
+  display: none;
+}
+
+.sub-heading {
+  margin-top: 73px;
+  text-align: center;
+  padding-left: 130px;
+  color: var(--red);
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+.heading {
+  margin-top: 18px;
+  text-align: center;
+  color: var(--black);
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 130px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.categories {
+  border-radius: 2px;
+  border-color: #192a56;
+  width: 232px;
+  margin-left: 14px;
+  display: grid;
+  position: fixed;
+  margin-top: 0px;
+  top: 0;
+  right: inherit;
+}
+.categories h3 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--red);
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+.categories .box {
+  width: inherit;
+  border-radius: 5px;
+  margin-left: 2px;
+  padding: 1.7rem 0.6rem;
+  font-weight: 640;
+  text-align: left;
+  color: #192a56;
+  font-size: 21px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 8px;
+  box-shadow: #192a56;
+}
+.categories .box:hover {
+  border: 1.75px solid var(--black);
+  font-size: 21.21px;
+  color: #2e7d32;
+}
+.cloths {
+  margin-right: 0%;
+  margin-left: 100px;
+}
+.cloths .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 1.8rem;
+  align-items: center; 
+  max-width: 80%; 
+  margin: 0 auto; 
+  margin-bottom: 1px;
+  margin-left: 170px;
+}
+
+/* Style for the button container */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Style for the custom buttons */
+.custom-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #CCCCCC; /* Monochromatic color */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #999999; /* Darker color on hover */
+}
+
+.custom-button:active {
+  background-color: #333333; /* Dark gray color when clicked */
+  color: #FFFFFF; /* Text color change on click, if needed */
+}
+
+
+.cloths .box-container .box {
+  padding: 1.5rem 0.5rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.cloths .box-container .box:hover {
+  transform: scale(1.02);
+}
+
+.cloths .box-container .box img {
+  height: 17rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+.cloths .box-container .box img:hover {
+  background-color: red;
+  opacity: 0.7;
+}
+
+.cloths .box-container .box h3 {
+  color: var(--black);
+  font-size: 2.3rem;
+}
+.cloths .box-container .box p{
+  color:var(--black);
+  font-size: 1.7rem;
+}
+
+.cloths .box-container .box span {
+  color: var(--red);
+  font-weight: bolder;
+  margin-right: 1rem;
+  font-size: 2.5rem;
+}
+.cloths .box-container .box a {
+  margin-top: 1rem;
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--red);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+.cloths .box-container .box a:hover {
+  background: black;
+  transform: scale(1.02);
+}
+
+
+
+
+.cart-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 35rem;
+  overflow-y: auto;
+  display: none;
+  margin-top: 66px;
+  background-color: white;
+  color: black;
+}
+
+.cart {
+  padding: 1rem;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  color: var(--red);
+  font-size: 2.5rem;
+  padding-top: 1.3rem;
+}
+
+.cart__close {
+  position: absolute;
+  padding-top: 1.3rem;
+  top: 1.3rem;
+  right: 0.5rem;
+  font-size: 2.8rem;
+  cursor: pointer;
+}
+.cart__close:hover{
+    color:lightslategray ;
+}
+
+.cart-item-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  font-size: larger;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cart-item-details h3 {
+  font-size: 1.7rem;
+  margin: 1px;
+}
+
+.cart-item-price {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: 500px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.quantity-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 2rem;
+  height: 2rem;
+  color: var(--black);
+  margin-left: 3px;
+  margin-right: 3px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.quantity {
+  margin: 0rem 0.5rem;
+  font-size: 1.7rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.pay-button {
+  padding: 0.6rem 3rem;
+  background-color: var(--red);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pay-button:hover {
+  background-color: #1d3461;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  header .icons #designs-bars {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  header .navbar a {
+    display: block;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    background: #eee;
+  }
+
+  .cloths .box-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #search-form #search-box {
+    width: 90%;
+    margin: 0 1rem;
+  }
+
+  .home .home-slider .slide .content h3 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .cloths .box-container .box img {
+    height: auto;
+    width: 50%;
+  }
+
+  .order form .inputBox .input {
+    width: 100%;
+  }
+}
