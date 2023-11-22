@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Page</title>
+  <style>
+    /* Styles for the overlay */
+    * {
+      font-family: "Nunito", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      text-transform: capitalize;
+      transition: all 0.2s linear;
+    }
+    .overlay {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px;
+      height: 650px;
+      background-color: rgba(241, 234, 255, 0.9);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+    }
+    /* Styles for input labels and fields */
+    .input-field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 70%;
+    }
+    .input-field label {
+      font-size: 18px;
+      margin-right: 20px;
+      flex: 1;
+    }
+    .input-field input[type="text"],
+    .input-field input[type="email"],
+    .input-field input[type="text"][id="address"],
+    .input-field textarea,
+    .input-field select {
+      flex: 2;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px; /* Rounded edges */
+      border: 1px solid #ccc; /* Adding a border for better visibility */
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .input-field [type="radio"] {
+      margin-right: 10px;
+    }
+    .input-field [type="text"][id="cvv"] {
+      width: calc(50% - 5px); /* Decreased width for CVV */
+    }
+    /* Styles for the buttons */
+    .btn {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #B15EFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px; /* Rounded edges for button */
+    }
+    .btn:hover {
+      background-color: #D0A2F7;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <!-- Personal Information -->
+    <div class="input-field">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="input-field">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+      <input type="radio" id="others" name="gender" value="others" required>
+      <label for="others">Others</label>
+    </div>
+    <div class="input-field">
+      <label for="address">Address:</label>
+      <textarea id="address" rows="3" required></textarea>
+    </div>
+    <div class="input-field">
+      <label for="landmark">Landmark:</label>
+      <input type="text" id="landmark" required>
+    </div>
+    <div class="input-field">
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" required>
+    </div>
+    
+    <!-- Transaction Details -->
+    <div class="input-field">
+      <label for="cardType">Card Type:</label>
+      <select id="cardType" required>
+        <option value="AXIS">AXIS</option>
+        <option value="VISA">VISA</option>
+        <option value="HDFC">HDFC</option>
+        <option value="ICICI">ICICI</option>
+       
+      </select>
+    </div>
+    <div class="input-field">
+      <label for="cardNo">Card No:</label>
+      <input type="text" id="cardNo" required>
+    </div>
+    <div class="input-field">
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" required>
+    </div>
+    <div class="input-field">
+      <label for="expiry">Expiration Date (mm/dd/yyyy):</label>
+      <input type="text" id="expiry" pattern="(0[1-9]|1[0-2])\/\d{2}\/\d{4}" placeholder="mm/dd/yyyy" required>
+    </div>
+    
+    <!-- Proceed to Pay Button -->
+    <button class="btn" style="background-color: #B15EFF;">Proceed to Pay</button>
+  </div>
+</body>
+</html>

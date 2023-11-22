@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>Cloth Vista Order Now</title>
+    <link rel="icon" href="images/indexlogo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/place_order.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="https://kit.fontawesome.com/953eae4970.js" crossorigin="anonymous"></script>
+  <script src="js/place_order.js"></script>  
+</head>
+<body>
+  <header>
+
+    <a href="#" class="logo"><i class="fas fa-snowflake"></i> Cloth Vista</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="#Tops">Explore</a>
+        <a href="#">offers</a>
+        <a href="payment.html" target="_blank">Pay</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-bars" id="designs-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" target="__blank" ><i class="fas fa-user-plus"></i></a>
+        <a id="openCart" class="openCart" onclick="openingcart()"><i class="fas fa-shopping-cart"></i> </a>
+
+</header>
+<!-- Category Sections -->
+<section class="categories" id="categories" >
+    <h3 style="color:#B15EFF">Categories</h3>
+    <a class="box" href="#sizechart">Size Chart</a>
+    <a class="box" href="#Tops" >Tops</a>
+    <a class="box" href="#Trousers" >Trousers</a>
+    <a class="box" href="#Skirts" >Skirts</a>
+    <a class="box" href="#Kurtha" >Kurtha</a>
+    <a class="box" href="#Saree" >Saree</a>
+    <a class="box" href="#Lehangas" >Lehangas</a>
+</section>
+
+    <!-- designs Sections -->
+    <section class="cloths" id="cloths">
+
+        <h3 class="sub-heading" style="color: #B15EFF;"> Collections </h3>
+        <h1 class="heading" id="Tops"> Tops </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/Top1.jpg" alt="">
+                <h3>Cozy Fusion</h3>
+                <p>Effortlessly chic: your new go-to top.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>                
+                <span>₹880</span>
+                <a href="" class="btn" value="Cozy Fusion" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Top2.jpg" alt="">
+                <h3>VersaStyle Tee</h3>
+                <p>Elevate your style with this versatile top.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>                
+                <span>₹760</span>
+                <a href="" class="btn" value="VersaStyle Tee" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Top3.jpg" alt="">
+                <h3>Quick Lift Top</h3>
+                <p>Comfort meets fashion in this stunning top</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>
+                <span>₹890</span>
+                <a href="" class="btn" value="Quick Lift Top" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Top4.jpg" alt="">
+                <h3>Trend Setter</h3>
+                <p>Set trends in this statement-making top.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>
+                <span>₹786</span>
+                <a href=""class="btn" value="Trend Setter" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Top5.jpg"3 alt="">
+                <h3>Chic Ease Top</h3>
+                <p>Effortless elegance embodied in this top.<a href="#modalBg">Read More</a></p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>
+                <span>₹999</span>
+                <a href="" class="btn" value="Chic Ease Top" onclick="result();openingcart();">add to cart</a>
+            </div>
+        
+            <div class="box">
+                <img src="images/Top6.jpg" alt="">
+                <h3>Elevate Blouse</h3>
+                <p>Instantly upgrade your wardrobe with this top.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>
+                <span>₹600</span>
+                <a href="" class="btn" value="Elevate Blouse" onclick="result();openingcart();">add to cart</a>
+            </div>
+        
+        </div>
+        <h1 class="heading" id="Trousers"> Trousers</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/Trousers1.webp" alt="">
+                <h3>Precision Comfort Pants </h3>
+                <p>Tailored perfection meets comfort in these versatile trousers</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">28</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">32</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">38</button>
+                </div>
+                <span>₹899</span>
+                <a href="" class="btn" value="Precision Comfort Pants" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Trousers2.webp" alt="">
+                <h3>VersaChic Pants</h3>
+                <p>Versatile, chic, and ready to elevate your everyday style</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">38</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">42</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">44</button>
+                </div>
+                <span>₹1250</span>
+                <a href=""class="btn" value="VersaChic Pants" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Trousers4.jpg" alt="">
+                <h3>Elegant Ease Trousers</h3>
+                <p>Effortless sophistication in every stitch, perfect for any occasion</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">36</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">40</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">42</button>
+                </div>
+                <span>₹999</span>
+                <a href="" class="btn" value="Elegant Ease Trousers" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Trousers3.jpg" alt="">
+                <h3>Timeless Trend Trousers</h3>
+                <p>Embrace timeless style with these classic yet trendy trousers.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">28</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">32</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">36</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">38</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">40</button>
+                </div>
+                <span>₹1250</span>
+                <a href="" class="btn" value="Timeless Trend Trousers" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Trousers5.jpg" alt="">
+                <h3>Modern Comfort Slacks</h3>
+                <p>Unparalleled comfort and style crafted into these modern essentials</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">36</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">40</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">42</button>
+                </div>
+                <span>₹1099</span>
+                <a href="" class="btn" value="Modern Comfort Slacks" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Trouser6.jpg" alt="">
+                <h3>Polished Edge Trousers</h3>
+                <p>Sleek, polished, and designed for the fashion-forward individual.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">28</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">32</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">38</button>
+                </div>
+                <span>₹1199</span>
+                <a href="" class="btn" value="Polished Edge Trousers" onclick="result();openingcart();">add to cart</a>
+            </div>
+        
+        </div>
+
+        <h1 class="heading" id="Skirts">Skirts</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/Skirt1.webp" alt="">
+                <h3>Graceful Flow Skirt</h3>
+                <p>Flowing grace for your every step.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">28</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">32</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">38</button>
+                </div>
+                <span>₹1000</span>
+                <a href=""class="btn" value="Graceful Flow Skirt" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Skirt2.jpg"  alt="">
+                <h3>Elegant Motion Skirt</h3>
+                <p>Versatile elegance in motion.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">36</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">40</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">42</button>
+                </div>
+                <span>₹799</span>
+                <a href="" class="btn" value="Elegant Motion Skirt" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Skirt3.jpg" alt="">
+                <h3>Sleek Chic Skirt</h3>
+                <p>Chic simplicity redefined.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">38</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">42</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">44</button>
+                </div>
+                <span>₹199</span>
+                <a  href=""class="btn" value="Sleek Chic Skirt" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Skirt4.jpg" alt="">
+                <h3>Effortless Style Skirt</h3>
+                <p>Effortlessly stylish from dawn to dusk. </p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">38</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">40</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">42</button>
+                </div>
+                <span>₹759</span>
+                <a  href=""class="btn" value="Effortless Style Skirt" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Skirt5.jpg" alt="">
+                <h3>Charming Comfort Skirt</h3>
+                <p>Flirtatious charm meets comfort</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">36</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">40</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">42</button>
+                </div>
+                <span>₹999</span>
+                <a href="" class="btn" value="Charming Comfort Skirt" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/Skirt6.jpg" alt="">
+                <h3>Timeless Pleat Skirt</h3>
+                <p>Timeless sophistication in every pleat.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">30</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">34</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">38</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">42</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">44</button>
+                </div>
+                <span>₹899</span>
+                <a href="" class="btn" value="Timeless Pleat Skirt" onclick="result();openingcart();">add to cart</a>
+            </div>
+        
+        </div>
+        <h1 class="heading" id="Kurtha">Kurtha</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/kurtha1.jpg" alt="">
+                <h3>Timeless Elegance Kurta</h3>
+                <p>Effortless elegance with a touch of tradition.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>   
+                <span>₹1299</span>
+                <a href="" class="btn"value="Timeless Elegance Kurta" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/kurtha2.jpg"  alt="">
+                <h3>Cultural Fusion Kurta</h3>
+                <p>Modern flair meets cultural richness.p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>   
+                <span>₹799</span>
+                <a href=""class="btn"value="Cultural Fusion Kurta" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/kurtha3.jpg" alt="">
+                <h3>Contemporary Classic Kurta</h3>
+                <p>Classic comfort in contemporary style.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>   
+                <span>₹999</span>
+                <a href=""class="btn"value="Contemporary Classic Kurta" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/kurtha4.avif" alt="">
+                <h3>Artisan Craft Kurta</h3>
+                <p>Artisanal craftsmanship tailored for you.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>   
+                <span>₹949</span>
+                <a href="" class="btn"value="Artisan Craft Kurta" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/kurtha5.jpg" alt="">
+                <h3>Regal Stitch Kurta</h3>
+                <p>Regal charm in every stitch.</p>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>   
+                <span>₹1399</span>
+                <a href="" class="btn" value="Regal Stitch Kurta" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/kurtha6.webp" alt="">
+                <h3>Sophisticated Tradition Kurta</h3>
+                <p>Embrace tradition with a hint of sophisticationp>
+                <div class="button-container">
+                    <button class="custom-button" id="sizeS" onclick="handleButtonClick(this)">S</button>
+                    <button class="custom-button" id="sizeM" onclick="handleButtonClick(this)">M</button>
+                    <button class="custom-button" id="sizeL" onclick="handleButtonClick(this)">L</button>
+                    <button class="custom-button" id="sizeXL" onclick="handleButtonClick(this)">XL</button>
+                    <button class="custom-button" id="sizeFREE" onclick="handleButtonClick(this)">FREE</button>
+                </div>   
+                <span>₹1299</span>
+                <a  href=""class="btn" value="Sophisticated Tradition Kurta" onclick="result();openingcart();">add to cart</a>
+            </div>
+        
+        </div>
+
+        <h1 class="heading" id="Saree">Timeless Saree </h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/saree1.webp" alt="">
+                <h3>Banarasi Saree</h3>
+                <p>A masterpiece of intricate weaving, each thread whispers tales of tradition and opulence. 
+                Adorn yourself in timeless elegance with the Banarasi Bliss Saree.
+                </p>
+                <span>₹3999</span>
+                <a  href=""class="btn" value="Banarasi Saree" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/saree2.jpg"  alt="">
+                <h3>Chanderi Saree</h3>
+                <p>Exquisite lightweight fabric woven with finesse, draping you in sheer grace. 
+                    Step into sophistication with the Chanderi Whisper Saree
+                </p>
+                <span>₹3500</span>
+                <a  href=""class="btn" value="Chanderi Saree" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/saree3.jpg" alt="">
+                <h3> Kanjeevaram Saree</h3>
+                <p>Rich silk woven with vibrant hues and golden threads, encapsulating heritage in every fold. 
+                    Embrace heritage with the Kanjeevaram Royalty Saree
+                </p>
+                <span>₹9999</span>
+                <a href=""class="btn" value=" Kanjeevaram Saree" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/saree4.jpg" alt="">
+                <h3>Bandhani Saree</h3>
+                <p>Vivid colors fused in delicate tie-dye patterns, a celebration of culture and vibrancy. 
+                    Indulge in tradition with the Bandhani Fiesta Saree</p>
+                <span>₹1869</span>
+                <a href="" class="btn" value="Bandhani Saree" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/saree5.jpg" alt="">
+                <h3>Patola Saree</h3>
+                <p>Double Ikat marvel showcasing ancient artistry and precision, a symphony of colors and craftsmanship.
+                     Wrap yourself in heritage with the Patola Pride Saree.
+                </p>
+                <span>₹8999</span>
+                <a href="" class="btn" value="Patola Saree" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/saree6.jpg" alt="">
+                <h3>Tussar Silk Saree</h3>
+                <p>Raw silk exuding natural elegance and texture, a canvas of simplicity and sophistication.
+                     Embrace serenity with the Tussar Charm Saree.
+                </p>
+                <span>₹17000</span>
+                <a href=""class="btn" value="Tussar Silk Saree" onclick="result();openingcart();">add to cart</a>
+            </div>
+        
+        </div>
+
+        <h1 class="heading" id="Lehangas">Lehangas</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/leh1.jpg" alt="">
+                <h3>Bridal Lehenga</h3>
+                <p>Exquisite embroidery and regal flair, a dream in every stitch for your special day. 
+                    Embrace elegance with the Royal Bride Lehenga
+                </p>
+                <span>₹15999</span>
+                <a href="" class="btn" value="Bridal Lehenga" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/leh2.jpg"  alt="">
+                <h3> Floral Lehenga</h3>
+                <p>Vibrant blooms swirling in delicate patterns, a garden of grace in every twirl. 
+                    Blossom in the Floral Fantasy Lehenga
+                </p>
+                <span>₹12999</span>
+                <a  href=""class="btn" value=" Floral Lehenga" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/leh3.jpg" alt="">
+                <h3>Silk Lehenga</h3>
+                <p>Rich silk draping you in timeless allure, a blend of luxury and tradition. 
+                    Radiate elegance with the Silken Charm Lehenga
+                </p>
+                <span>₹9999</span>
+                <a href=""class="btn" value="Silk Lehenga" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/leh4.jpg" alt="">
+                <h3>Contemporary Lehenga</h3>
+                <p>Modern chic with ethnic essence, a fusion of style and tradition.
+                     Flaunt sophistication in the Contemporary Grace Lehenga
+                </p>
+                <span>₹4500</span>
+                <a href="" class="btn" value="Contemporary Lehenga" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/leh5.jpg" alt="">
+                <h3> Mirror Work Lehenga</h3>
+                <p>Intricate mirrors reflecting cultural brilliance, each sparkle echoing heritage.
+                     Shine bright in the Mirror Mosaic Lehenga
+                </p>
+                <span>₹12999</span>
+                <a href="" class="btn" value=" Mirror Work Lehenga" onclick="result();openingcart();">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="images/leh6.jpg" alt="">
+                <h3>Pastel LehengaCheesecake</h3>
+                <p>Soft hues whispering elegance, a palette of subtlety and grace. 
+                    Embrace serenity in the Pastel Dream Lehenga
+                </p>
+                <span>₹8999</span>
+                <a href="" class="btn" value="Pastel Lehenga" onclick="result();openingcart();">add to cart</a>
+            </div>
+        </div>
+    <h1 class="heading" id="sizechart"> Size Chart </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/sizechart.png" alt="Size chart" style="height: 500px;">
+        </div>
+    </div>
+    </section>
+    <section class="cart-container" id="cart-container">
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <i class="bx bx-x cart__close" id="cart-close" onclick="closingcart()"></i>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <div class="total">
+                <span>Total: <span id="cart-total">₹0</span></span>
+                <a href="payment.html" target="_blank" class="pay-button">Pay</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
